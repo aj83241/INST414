@@ -26,7 +26,7 @@ for t in tickers:
         info = ticker_obj.info
         market_cap = info.get('marketCap')
         beta = info.get('beta')
-        dividend_yield = info.get('dividendYield', 0)  # default 0 if missing
+        dividend_yield = info.get('dividendYield', 0)
         
         # one year return
         hist = ticker_obj.history(period="1y")
